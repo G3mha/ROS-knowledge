@@ -17,10 +17,6 @@
     - XML
     - XML Tools
 
-## URDF
-
-Universal Robot Description Format (URDF) is an XML file format used in ROS to describe all elements of a robot. It is used by robot_state_publisher to publish the state of the robot to tf, and by the robot_model and robot_state to represent the robot.
-
 ## Rviz
 
 Rviz is a 3D visualization tool for ROS. It is used to visualize the robot model, the robot state, and sensor data. Basically, it is limited to the robot's knowledge.
@@ -66,3 +62,21 @@ Go to the source folder of your workspace and type the following command (replac
 cd ~/catkin_ws/src
 catkin_create_pkg <package_name> [depend1] [depend2] [depend3]
 ```
+
+## Making a robot
+
+### URDF
+
+Universal Robot Description Format (URDF) is an XML file format used in ROS to describe all elements of a robot. It is used by robot_state_publisher to publish the state of the robot to tf, and by the robot_model and robot_state to represent the robot.
+
+### Customizing robot design in URDF
+
+Questions to ask yourself:
+
+1. What is the robot type? (e.g. mobile, manipulator, etc.)
+
+2. What are the joint types? (e.g. revolute, prismatic, continuous, fixed, etc.) - *Joints are not apperent since they are imaginary*.
+
+3. What are the link lenghts (parts that compose the robot)? (geometrical, physical and color properties) - *Links are apperent since they are physical*.
+
+4. What is the total footprint of the robot? (e.g. box size, cylinder size, mesh size, etc.)
