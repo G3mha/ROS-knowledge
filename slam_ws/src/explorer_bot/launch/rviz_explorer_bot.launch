@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="robot_description" textfile="$(find explorer_bot)/urdf/explorer_bot.urdf"/>
+    <node name="Joint_tester" pkg="rviz" type="rviz" output="screen"/>
+    <node name="rsp" pkg="robot_state_publisher" type="robot_state_publisher" output="screen"/>
+</launch>

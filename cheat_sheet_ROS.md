@@ -80,3 +80,19 @@ Questions to ask yourself:
 3. What are the link lenghts (parts that compose the robot)? (geometrical, physical and color properties) - *Links are apperent since they are physical*.
 
 4. What is the total footprint of the robot? (e.g. box size, cylinder size, mesh size, etc.)
+
+
+## Lauching Rviz with robot model
+
+1. You should source your ws setup.sh file
+
+```bash
+roslaunch explorer_bot rviz_explorer_bot.launch
+```
+
+or 
+
+```bash
+roscore
+rosrun rviz rviz
+```
