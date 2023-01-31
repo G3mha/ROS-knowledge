@@ -17,6 +17,10 @@
     - XML
     - XML Tools
 
+## ROS Publisher and Subscriber (PubSub)
+
+While the Publisher sends data, the Subscriber receives data. The Publisher and Subscriber are connected through a topic. The topic is a channel where the data is sent and received. Meanwhile, the message is the data that is sent and received. The message types can be the following (depending on the topic): String, Int, Float, Bool, etc.
+
 ## Rviz
 
 Rviz is a 3D visualization tool for ROS. It is used to visualize the robot model, the robot state, and sensor data. Basically, it is limited to the robot's knowledge.
