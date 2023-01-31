@@ -88,6 +88,7 @@ Questions to ask yourself:
 
 ```bash
 roslaunch explorer_bot rviz_explorer_bot.launch
+rosrun joint_state_publisher joint_state_publisher
 ```
 
 or 
