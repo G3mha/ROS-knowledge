@@ -27,6 +27,7 @@ While the Publisher sends data, the Subscriber receives data. The Publisher and 
 - Checking a topic messages: `rostopic echo <topic_name>`
 - Checking a message type: `rosmsg show <message_type>`
 - Checking a message fields: `rosmsg info <message_type>`
+- Control the robot: `roslaunch teleop_twist_keyboard teleop_twist_keyboard.launch`
 
 ### cmd_vel
 
