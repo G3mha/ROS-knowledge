@@ -34,6 +34,9 @@ While the Publisher sends data, the Subscriber receives data. The Publisher and 
 The cmd_vel topic is used to send velocity commands to the robot. The message type is Twist.
 *Twist is an array of 2 vectors, linear and angular, both with coordinates in 3D (x,y,z)*
 
+Tip: Stop the robot instantly (via terminal)
+`rostopic pub -1 /cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'`
+
 ## Rviz
 
 Rviz is a 3D visualization tool for ROS. It is used to visualize the robot model, the robot state, and sensor data. Basically, it is limited to the robot's knowledge.
